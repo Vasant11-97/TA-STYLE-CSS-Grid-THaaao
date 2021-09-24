@@ -1,0 +1,439 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: black;
+  padding: 0rem 5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.section-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.section-1 .left-col {
+  height: 90vh;
+  background-image: url(../../media/home-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: aqua;
+  grid-column: span 1;
+}
+.section-1 .left-col img {
+  width: 100%;
+  height: 100%;
+}
+.section-1 .left-col h1 {
+  position: absolute;
+  font-size: 1.75rem;
+  z-index: 2;
+  color: #413f3f;
+  font-weight: 700;
+  padding: 2rem 6rem;
+}
+.section-1 .right-col {
+  grid-column: span 1;
+  background-color: #F5E3D7;
+  padding: 2rem 3rem;
+}
+.section-1 .right-col .nav-bar {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.section-1 .right-col .nav-bar a {
+  color: gray;
+}
+.section-1 .right-col .nav-bar :hover {
+  color: #bbb385;
+}
+.section-1 .right-col .btn {
+  padding: 0.5rem 2rem;
+  border: 2px solid black;
+  border-radius: 40px;
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.section-1 .right-col h2 {
+  color: #B7B2AE;
+  font-size: 1.2rem;
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+.section-1 .right-col h3 {
+  color: #2B3434;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.section-1 .right-col p {
+  color: #B7B2AE;
+  line-height: 1.4;
+  padding-bottom: 4rem;
+}
+
+.section-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+.section-2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-2 .section-2-col-1 {
+  padding: 2rem 2rem;
+  grid-column: span 2;
+  background-color: #FFFFFF;
+}
+.section-2 .section-2-col-1 h2 {
+  font-size: 2rem;
+  color: #B7B2AE;
+  padding-bottom: 1rem;
+}
+.section-2 .section-2-col-1 h3 {
+  color: #ECAF4E;
+  padding-bottom: 2rem;
+}
+.section-2 .section-2-col-1 p {
+  line-height: 1.5;
+  padding-bottom: 1rem;
+  color: #B7B2AE;
+}
+.section-2 .section-2-col-3 {
+  background-color: #ECAF4E;
+  padding: 2rem 1rem;
+}
+.section-2 .section-2-col-3 h4 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  color: #FFFFFF;
+}
+.section-2 .section-2-col-3 p {
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  padding-bottom: 2rem;
+}
+.section-2 .section-2-col-3 .white-div {
+  background-color: #FFFFFF;
+  height: 3px;
+}
+.section-2 .section-2-col-3 .white-div .black-div-90 {
+  width: 90%;
+  height: 3px;
+  background-color: black;
+  margin-top: 0.75rem;
+}
+.section-2 .section-2-col-3 .white-div .black-div-70 {
+  width: 70%;
+  height: 3px;
+  background-color: black;
+  margin-top: 0.75rem;
+}
+.section-2 .section-2-col-3 .white-div .black-div-80 {
+  width: 80%;
+  height: 3px;
+  background-color: black;
+  margin-top: 0.75rem;
+}
+
+.section-3 {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  text-align: center;
+}
+.section-3 .box-1 {
+  background-color: #ECAF4E;
+  padding: 2rem 2rem;
+  color: #FFFFFF;
+}
+.section-3 i {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.section-3 h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+.section-3 p {
+  padding-bottom: 2rem;
+  line-height: 1.5rem;
+}
+.section-3 .box-2 {
+  background-color: #EC653A;
+  padding: 2rem 2rem;
+  color: #FFFFFF;
+}
+.section-3 .box-3 {
+  background-color: #000;
+  padding: 2rem 2rem;
+  color: #FFFFFF;
+}
+.section-3 .box-4 {
+  background-color: #e6e1e1;
+  padding: 2rem 2rem;
+  color: #2B3434;
+}
+
+.section-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  color: #fff;
+}
+.section-4 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-4 .right-col {
+  background-color: #EC653A;
+  padding: 2rem 2rem;
+}
+.section-4 .right-col .flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section-4 .right-col h2 {
+  font-size: 2.4rem;
+  padding-bottom: 1rem;
+}
+.section-4 .right-col h3 {
+  padding-bottom: 2rem;
+}
+.section-4 .right-col i {
+  font-size: 3rem;
+  padding-right: 2rem;
+}
+.section-4 .right-col h4 {
+  font-size: 1.2rem;
+  color: #e6e1e1;
+  padding-bottom: 1rem;
+}
+.section-4 .right-col h4 span {
+  color: #2B3434;
+}
+.section-4 .right-col .article {
+  margin-top: 2rem;
+}
+
+.section-5 {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  color: #fff;
+}
+.section-5 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-5 .left-col {
+  background-color: #ECAF4E;
+  padding: 2rem 2rem;
+}
+.section-5 .left-col .flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section-5 .left-col h2 {
+  font-size: 2.4rem;
+  padding-bottom: 1rem;
+}
+.section-5 .left-col h3 {
+  padding-bottom: 2rem;
+}
+.section-5 .left-col i {
+  font-size: 3rem;
+  padding-right: 2rem;
+}
+.section-5 .left-col h4 {
+  font-size: 1.2rem;
+  color: #e6e1e1;
+  padding-bottom: 1rem;
+}
+.section-5 .left-col h4 span {
+  color: #2B3434;
+}
+.section-5 .left-col .article {
+  margin-top: 2rem;
+}
+
+.section-6 {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  color: #FFFFFF;
+}
+.section-6 .leftbox {
+  grid-column: span 2;
+  padding: 2rem;
+  background-color: #EC653A;
+}
+.section-6 .leftbox h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.section-6 .leftbox p {
+  color: #B7B2AE;
+  padding-bottom: 1rem;
+}
+.section-6 .leftbox form input {
+  width: 100%;
+  margin: 1rem 0;
+  border: none;
+  outline: none;
+  background-color: #EC653A;
+  color: #FFFFFF;
+  padding: 1rem 0;
+  border-bottom: 1px solid yellow;
+}
+.section-6 .leftbox form textarea {
+  width: 100%;
+  margin: 1rem 0;
+  border: none;
+  outline: none;
+  background-color: #EC653A;
+  padding: 1rem 0;
+  border-bottom: 1px solid yellow;
+}
+.section-6 .leftbox form ::-moz-placeholder {
+  color: #FFFFFF;
+}
+.section-6 .leftbox form :-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.section-6 .leftbox form ::placeholder {
+  color: #FFFFFF;
+}
+.section-6 .leftbox form button {
+  padding: 0.5rem 4rem;
+  background-color: #FFFFFF;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  color: #2B3434;
+}
+.section-6 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-6 .rightbox {
+  background-color: black;
+  color: #fff;
+  padding: 2rem;
+}
+.section-6 .rightbox h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+.section-6 .rightbox address {
+  color: #F5E3D7;
+  padding-bottom: 2rem;
+}
+.section-6 .rightbox h3 {
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+.section-6 .rightbox i {
+  margin-top: 1rem;
+}
+.section-6 .rightbox i span {
+  color: #ECAF4E;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.section-7 {
+  padding: 6rem 8rem;
+  background-color: #EC653A;
+}
+.section-7 iframe {
+  width: 100%;
+  box-shadow: 0px 0px 15px #4d4b4b;
+}
+
+.footer {
+  padding: 10rem 0rem;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #B7B2AE;
+}
+.footer span {
+  color: #EC653A;
+}
+.footer .flex {
+  justify-content: center;
+}
+.footer .flex a {
+  margin: 0rem 1rem;
+  margin-top: 1rem;
+  color: #2B3434;
+}/*# sourceMappingURL=style.css.map */
